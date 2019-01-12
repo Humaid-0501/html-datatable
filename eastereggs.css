@@ -1,0 +1,38 @@
+body{
+	background-color: orange;
+}
+
+h1{
+	font-family: arial, sans-serif;
+}
+
+#road{
+	border-bottom: 8px dashed black; 
+}
+
+#runner{
+	background: url("https://2.bp.blogspot.com/-mCpOAkFb6TY/WPWAoLCpTxI/AAAAAAAABG4/uhuzGDxES0kAhYaQItuqC1JcHF-KeH54ACLcB/s1600/blue-run-spritesheet.png");
+	width: 1368px;
+	height: 203px;
+
+	animation:walk 1s steps(8) infinite,
+	          forward 8s linear infinite;
+}
+
+@keyframes walk{
+	0%{
+		background-position: 0px;
+	}
+	100%{
+		background-position: 1368px;
+	}
+}
+
+@keyframes forward{
+	0%{
+		transform: translateX(-100px);
+	}
+	100%{
+		transform: translateX(1500px);
+	}
+}
